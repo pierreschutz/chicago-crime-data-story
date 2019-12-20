@@ -20,7 +20,7 @@
                 <br>
 
                 <p class="text-muted">
-                    The bigger the text is, the more frequent this type of crime was reported.
+                    The bigger the text, the more frequent this type of crime is in Chicago.
                     <br> <br>
                     We can see what are the most frequent kind of crime.
                     Here is an explanation of some of them that might not be familiar for everyone: <br>
@@ -86,15 +86,17 @@
                     increase. We can guess that the new techniques are mostly for preventing crime. They reduced the
                     number of crime rather than the number of cases closed with a criminal arrested.
 
-                    <br>
-
-
-                    Sometimes looking at the whole data at once is representative of sub-categories.That's why we will
-                    have a closer look at <i>HOMICIDE</i> crimes.
-
                 </p>
 
-                <img src="img/homicide_evolution.png" width="750">
+                <hr>
+                <p class="text-muted">
+                    Sometimes looking at the whole data at once is not representative of sub-categories. In order to see if 
+                     <i>HOMICIDE</i> crimes have followed the same trend we will now show the homicide evolution.
+
+                    <img src="img/homicide_evolution.png" width="750">
+                </p>
+
+
 
                 <p class="text-muted">
 
@@ -102,7 +104,7 @@
                     crime-fighting techniques used by the Chicago Police. However the trend is now different than when
                     we consider all kinds of crime together. Indeed we can clearly see the rise of homicides in 2016.
                     This sudden rise of homicides was widely cover in the newspapers in the U.S.A. This huge homicide
-                    rise was apparently responsible for half of the homicides that led to a rise of homicide in the USA
+                    rise in Chicago was apparently responsible for half of the cases that led to a rise of homicide in the USA
                     for 2016.
 
                 </p>
@@ -110,10 +112,10 @@
                 <hr>
 
                 <p class="text-muted">
-                    Let's try to have a spatial analysis of Chicago. It is interesting to relate areas to other factors
+                    Let's now try to have a spatial analysis of crime in Chicago. It is interesting to relate specific areas to other factors
                     such as number of crimes, type of crimes to better understand where violence is happening.
-                    We will split the city into community areas. There are 77 community areas in Chicago. A first
-                    approach would be to consider the North vs the South of Chicago.
+                    We will split the city into community areas. There are 77 community areas in Chicago. Our first
+                    approach is to consider crime in the North vs in the South of Chicago.
 
                 </p>
 
@@ -130,8 +132,9 @@
 
                 <p class="text-muted">
 
-                    From this map we cannot tell which part of Chicago is more violent. Let's display the total number
-                    of crime per community area on the map to gain better insights.
+                    We cannot tell if the South is more violent than the North or vice versa. We need to split the city
+                    in smaller areas to obtain better insights. The following map displays the number of crime reported per community area and 
+                    hoovering on an area will tell you what are the top 3 most frequent crimes for that area.
 
                 </p>
 
@@ -164,8 +167,8 @@
                         don't remember are usually linked to fraud.
                     </li>
                     <li>
-                        In the 'airport area' we can see <i>OTHER OFFENSE</i>. It might have a link with the presence of the
-                        airport. Airports usually come with special legislation.
+                        In the 'Airport area' we can see <i>OTHER OFFENSE</i>. It might have a link with the presence of the
+                        airport. Indeed, airports usually come with special legislation.
                     </li>
                     <li>
                         One interesting fact is that areas at the edge of Chicago usually have <i>THEFT</i> as a first type of
@@ -188,8 +191,9 @@
                     there is generally no restrictions for other areas. <a href="https://www.chicagocriminaldefenselawyer.net/violent-crimes/weapons-charges">[3]</a>
 
                     <br>
-
-                    We should compare the crime map with the homicide one.
+                    <br>
+                    We should compare the crime map with the homicide one as we realized earlier than homicide crime were following
+                    an another trend than crime in general. You can see below a heatmap of the homicides in Chicago since 2001.
 
                 </p>
 
@@ -204,13 +208,13 @@
 
                 <p class="text-muted">
 
-                    This map confirms the previous one. As we can see the areas with high density of homicides are
+                    This map confirms our previous analysis. As we can see the areas with high density of homicides are
                     usually in community areas with narcotics as one of the top crime. It suggests that violence in
                     Chicago is related to drug dealing and more generally to criminal gang activity. <br>
                     Moreover, areas without a lot of homicide cases can are usually in the border of the city. Those
                     neighborhoods are probably residential. <br>
                     We can also think that some central areas without high number of crimes are well protected. Indeed,
-                    there is not a lot of homicide cases near the downtown or the university. Those important areas are
+                    there is not a lot of homicide cases near the Downtown or the University. Those important areas are
                     usually well protected. As an example it is interesting to know that the University of Chicago has
                     its own Police Department.
 
@@ -221,7 +225,10 @@
                 <p class="text-muted">
                     We will now see if there is a relationship between violence and demographic evolution. <br>
 
-                    TODO : intro crime rate evolution between 2002, 2010 and 2017
+                    We thus took into consideration the population of each community area to obtain a crime rate per 100,000 inhabitants.
+
+                    The following map shows the crime rate per community area in 2002, 2010 and 2017. Adding the layer sequentially (using the button on the right)
+                    can help you understand how violence evolved over the past 20 years. The first layer shown is the crime rate for 2002.
                 </p>
 
                 <figure>
@@ -232,24 +239,27 @@
                 <br>
 
                 <p class="text-muted">
-                    The default layer is for year 2002. What can be seen is that the downtown was the most violent zone
-                    area in 2002 in term of crime rate. We have to remember that people usually do not live in downtown
-                    as this area is dedicated for businesses. However we can see that the crime rate for the downtown
+                    What can be seen is that the Downtown was the most violent zone
+                     in 2002 in term of crime rate. We have to remember that people usually do not live in the Downtown
+                    as this area is dedicated for businesses so the crime rate might be high for this reason.
+                    However we can see that the crime rate for the downtown
                     decreased a lot between 2002 and 2010. It might correspond to a huge effort made by the Police to
                     fight violent in the busiest area of the town. <br>
-                    We can by adding layers successively that violence is spreading in the West of Chicago with
+                    We can, by adding layers successively that violence is spreading in the West of Chicago with
                     community areas <i>Austin</i>, <i>Humboldt Park</i>, <i>West Garfield Park</i>, <i>East Garfield Park</i> and <i>North
                     Lawndale</i> and in the South of Chicago with community areas <i>Fuller Park</i>, <i>Englewood</i> and <i>West
                     Englewood</i> for example. <br>
+                    <br>
 
-                    Now let's see how population evolved between 2000 and 2010 and between 2010 and 2017. We might see
-                    trends such as people living violent areas, or joining new areas.
+                    Now let's see how population of each area evolved between 2000 and 2010, and between 2010 and 2017. We might see
+                    trends such as people living violent areas, or joining new areas. The button on the right can be used to change between 2000-2010
+                    and 2010-2017.
 
                 </p>
 
                 <figure>
                     <iframe src="../img/population_evolution.html" width="750" height="550"></iframe>
-                    <figcaption class="text-right text-muted">Evolution of population per community area between 2002 and 2017</figcaption>
+                    <figcaption class="text-right text-muted">Evolution of population per community area between 2000 and 2010, and between 2010 and 2017</figcaption>
                 </figure>
 
                 <br>
@@ -263,7 +273,7 @@
                     general, areas that were associated with violence in our analysis correspond to areas with a
                     population drop. <br>
                     Moreover we can clearly see that the downtown area gained population between 2000 and 2010. As we
-                    realized the crime rate dropped in that area between 2002 and 2010 even though there was more and
+                    realized, the crime rate dropped in that area between 2002 and 2010 even though there was more and
                     more people living there. It really means that Chicago Police tried to reduce violence in the
                     downtown area. <br>
                     However from 2010 to 2017 we can see that lots of areas are concerned by population decreasing.
