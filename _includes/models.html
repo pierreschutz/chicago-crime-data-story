@@ -11,7 +11,7 @@
                     the situation,
                     we would like to build tools that could help police and citizens by detecting patterns in the crime
                     of Chicago. <br>
-                    To do so, we are modelling our dataset for different purposes using a variety of machine learning
+                    To do so, we are modeling our dataset for different purposes using a variety of machine learning
                     methods. The idea is to build two kinds of models:
 
                 </p>
@@ -21,8 +21,9 @@
                         <b>Arrest prediction model:</b> This model will try to, given the various information of a
                         crime that is available to
                         our crime dataset and which might correspond to the amount of information the authority would
-                        have about recent unsolved crime,
+                        have about a recent unsolved crime,
                         return the probability of the culprit of the crime being arrested.
+                        As an example, this model could be used to help the Police spread their forces more efficiently around the city.
                     </li>
 
                     <li>
@@ -34,13 +35,16 @@
                         This model could be useful in several ways, for instance, the police might find it useful for
                         knowing
                         what to expect of a potential crime in a given location.
+                        This model could help Police to reduce most frequents crimes type by strengthening the patrols in certain areas, during certain periods.
                     </li>
                 </ul>
 
 
                 <p class="text-muted">
-                    In order to present those two models, we decided let the ability for the user to select a few
-                    parameters and observe the results of our models. <br> <br>
+                    In order to present those two models, we decided to let the ability for the user to select a few
+                    parameters and observe the results of our models. The other parameters have been set such that for categorical features,
+                    it is the most frequent one, and for continuous features, we took the average. Finally, the date choose is the latest one with sufficient data (2018).
+                    Also, the most violent area was determined in our analysis, it corresponds to the Austin area (code 25).<br> <br>
                 </p>
 
                 <hr>
@@ -86,6 +90,15 @@
 
                 <div id="arrest_image_container" height="600"></div>
 
+                <br>
+
+                <p class="text-muted">
+                    As we can observe, people arrested for Narcotics had to be caught red-handed because no-one may report drug-related crimes.
+                    Thus, our model is likely to predict that a narcotics-related crime will result in an arrest.
+                    Whereas for most of the thefts, the culprit is not arrested. This isn't a surprise as most theft reports are made by the victim after the event.
+                    We finally observe that the month of the year doesn't affect the arrest probability.
+                </p>
+
                 <hr>
 
                 <h2 class="text-center">Crime type model</h2>
@@ -119,10 +132,15 @@
 
                 <br>
 
-
-
-
                 <div id="type_image_container" height="600"></div>
+
+                <br>
+
+
+                <p class="text-muted">
+                    We can observe that for the second model, the summer months have different main crime types than the rest of the year.
+                    Therefore, during this period, the Police should adapt to this change.
+                </p>
 
 
             </div>
