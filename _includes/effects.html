@@ -1,29 +1,40 @@
 <section class="bg-primary" id="effects">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-8 col-lg-offset-2 text-center" style="text-align: justify;">
                 <h1 class="section-heading text-center">Quality of Life Factors</h1>
+                <br>
                 <img src="img/downtown_chicago_wallpaper_001.jpg" alt="City" width="750" height = 450>
                 <hr class="light">
-                <p class="text-faded" style="text-align: justify;">
+                <p class="text-faded">
                     After looking at the more dangerous areas in Chicago in terms of crime rate, we will try to see if there is a relation between the high crime rate of an area and other factors that correspond to the quality of life such as the quality of restaurants, and the number of flu clinics. Moreover we'll try to determine if those zones are in general very frequented or not by using our Taxi Rides history. To perform our analysis, we decided to consider Chicago at the level of its Communitiy Areas.
                 </p>
-                <h3>Clinics</h3>
-                <p class="text-faded" style="text-align: justify;">
+                <hr class="light">
+                <h3 class="text-center">Clinics</h3>
+                <p class="text-faded">
                     Below is the density of the Clinics accross the city :
                 </p>
-                <iframe src="img/clinics.html" width="750" height="450"></iframe>
-                <p class="text-faded" style="text-align: justify;">
-                    <br></br>
+                <figure>
+                    <iframe src="img/clinics.html" width="750" height="550"></iframe>
+                    <figcaption class="text-right text-faded">Heatmap of the clinics count per area</figcaption>
+                </figure>
+                <p class="text-faded" >
+                    <br>
                     By looking at the geographical distribution of the clinics in Chicago, we can see that there is bigger amount of clinics that gave flu vaccines in the Northern West part of the city. There is a clear difference between North and South by means of the number of clinics. We can then suppose that the Northern part is wealthier than the Southern part. Moreover the wealthiest areas are probably the one near the lake as it is usually where we find the most number of clinics that gave flu shots. The most violent area 'Austin' does not have a lot of clinics even though it is close to downtown. We can think than this area is one of the poorest of Chicago on top of being one of the most violent one.
                 </p>
-                <h3> Food Inspection</h3>
-                <p class="text-faded" style="text-align: justify;">
+                <hr class="light">
+                <h3 class="text-center"> Food Inspection</h3>
+                <p class="text-faded">
                     We are now going to look at food inspections passing rate.
                 </p>
-                <iframe src="img/inspections.html" width="750" height="450"></iframe>
-                <p class="text-faded" style="text-align: justify;">
-                        <br></br>
+
+                <figure>
+                    <iframe src="img/inspections.html" width="750" height="550"></iframe>
+                    <figcaption class="text-faded text-right">Pass inspection rate per community area</figcaption>
+                </figure>
+
+                <p class="text-faded">
+                        <br>
                         We can see that the violent areas are usually link with a lower inspection passing rate. Indeed we can speculate that those areas are the poorest of the city. The areas where restaurants pass the inspection the most are near the downtown, or at the boarder of the city. Those one are probably the richest residential areas of Chicago.
                     </p>
             </div>
