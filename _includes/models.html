@@ -1,9 +1,11 @@
+
+
 <section  id="models">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h1 class="section-heading text-center">Predictive models </h1>
-                <hr>
+
                 <img src="img/chicago-models.jpg" alt="ML models" width="750" height="450">
                 <hr>
                 <p class="text-muted" style="text-align: justify;">
@@ -11,7 +13,61 @@
                     <br> <br>
                     Maecenas non mauris vel dolor cursus gravida. Curabitur nec egestas sem, sed mollis neque. Vestibulum ac facilisis risus. Praesent ornare hendrerit suscipit. Praesent lectus mi, faucibus sit amet quam at, pharetra lobortis mauris. Phasellus faucibus augue est, aliquam vestibulum arcu sagittis ut. Maecenas fermentum urna id aliquet accumsan. Integer ut nunc vitae mi dignissim egestas. Proin tempus lacus et libero bibendum posuere. Aliquam erat volutpat. Vestibulum finibus placerat lorem, vel suscipit metus venenatis nec. Nullam consequat risus id purus pulvinar, consectetur lobortis ipsum auctor.
                 </p>
+
+                <select id="months" name="month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select name="areas">
+                    <option value="32">Downtown</option>
+                    <option value="76">Airport area</option>
+                    <option value="41">University area</option>
+                    <option value="25">Most violent area</option>
+                </select>
+
+
+
+                <div id="image-container" height="600"></div>
+
+
+
+
             </div>
         </div>
     </div>
 </section>
+
+
+<script>
+
+    let first = true;
+
+    document.getElementById('months').addEventListener("change", function () {
+
+        if (first) {
+            let img = document.createElement('img');
+            img.src = "img/portfolio/" + document.getElementById('months').value + ".jpg";
+            document.getElementById("image-container").appendChild(img);
+
+            first = false;
+        } else {
+            
+            document.getElementById("image-container").firstChild.src = "img/portfolio/" + document.getElementById('months').value + ".jpg";
+        }
+
+    });
+
+
+
+</script>
