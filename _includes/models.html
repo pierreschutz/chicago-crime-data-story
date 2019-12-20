@@ -3,16 +3,35 @@
 <section  id="models">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-8 col-lg-offset-2 text-center" style="text-align: justify;">
                 <h1 class="section-heading text-center">Predictive Models</h1>
                 <br>
                 <img src="img/chicago-models.jpg" alt="ML models" width="750" height="450">
                 <hr>
-                <p class="text-muted" style="text-align: justify;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis pulvinar elit. Donec quis imperdiet odio. Etiam eget velit dolor. Nullam ex arcu, consequat in dignissim quis, elementum sed diam. In sit amet augue eleifend, varius lorem nec, fermentum dui. In hac habitasse platea dictumst. Sed sed purus vel est semper maximus sollicitudin ut augue. Aliquam sed nunc felis. Nam ac pellentesque nisl. Ut eget molestie diam.
-                    <br> <br>
-                    Maecenas non mauris vel dolor cursus gravida. Curabitur nec egestas sem, sed mollis neque. Vestibulum ac facilisis risus. Praesent ornare hendrerit suscipit. Praesent lectus mi, faucibus sit amet quam at, pharetra lobortis mauris. Phasellus faucibus augue est, aliquam vestibulum arcu sagittis ut. Maecenas fermentum urna id aliquet accumsan. Integer ut nunc vitae mi dignissim egestas. Proin tempus lacus et libero bibendum posuere. Aliquam erat volutpat. Vestibulum finibus placerat lorem, vel suscipit metus venenatis nec. Nullam consequat risus id purus pulvinar, consectetur lobortis ipsum auctor.
+                <p class="text-muted">
+                    Now that we have extracted meaningful data from our crime dataset, and got a better understanding of the situation,
+                    we would like to build tools that could help police and citizens by detecting patterns in the crime of Chicago. <br>
+                    To do so, we are modeling our dataset for different purposes using a variety of machine learning methods. The idea is to build two kind of models :
+
                 </p>
+
+                <ul class="text-muted"  style="font-size: 16px;">
+                    <li>
+                        <b>Arrest prediction model:</b> This model will try to , given the various information of a crime that are available to
+                        our crime dataset and which might correspond to the amount of information the authority would have about a recent unsolved crime,
+                        return the probability of the culprit of the crime being arrested.
+                    </li>
+
+                    <li>
+                        <b>Crime type prediction model:</b> The goal of this model would be to give the probability of the type of crimes
+                        given again the data of the crime dataset except the Description (obviously it is highly correlated to the type of crime)
+                        and the Arrest (usually if we want to know the type of crime, the culprit isn't arrested).
+                        This model could be useful in several ways, for example the police might find it useful for knowing
+                        what to expect of a potential crime in a given location.
+                    </li>
+                </ul>
+
+
 
                 <select id="months" name="month">
                     <option value="1">January</option>
@@ -35,6 +54,19 @@
                     <option value="41">University area</option>
                     <option value="25">Most violent area</option>
                 </select>
+
+
+                <select id="">
+                    <option value="narcotics">Narcotics</option>
+                    <option value="theft">Theft</option>
+                    <option value="homicide">Homicide</option>
+                    <option value="battery">Battery</option>
+                </select>
+
+                NARCOTICS
+                THEFT
+                HOMICIDE
+                BATTERY
 
 
 
